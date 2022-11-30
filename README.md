@@ -21,7 +21,7 @@ Lógica del Juego: Index.js
 ## Creditos
 Este software utiliza los siguientes recursos:
 
-- Imagenes: <a href="https://es.vecteezy.com/vectores-gratis/dibujos">Dibujos Vectores por Vecteezy</a>   
+- Imagenes: <a href="https://es.vecteezy.com/vectores-gratis/piedra-papel-o-tijera">Piedra Papel O Tijera Vectores por Vecteezy</a> 
 
 - Css Template: <a href="http://www.templatemo.com/preview/templatemo_256_black_fox">Black Fox Template </a>
 

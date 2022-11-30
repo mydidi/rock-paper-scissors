@@ -1,0 +1,135 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Piedra,papel o tijera</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    
+    <link href="./css/style.css" rel="stylesheet" type="text/css">
+    
+    
+    </head>
+    
+    <body>
+        <div id="templatemo_menu_wrapper">
+
+            <div id="templatemo_menu">
+            
+                
+            </div> 
+        </div>
+     
+
+   
+   
+    <div id="templatemo_footer_wrapper">
+        
+        <div id="templatemo_footer">
+        
+            <div class="footer_box">
+            
+                <div class="footer_menu">
+                    <div class="image_wrapper fl_img">
+                        <h2>JUGADOR 1</h2>
+                    <img id="Player1" src="./images/0R.png" alt="Jugador1">
+                    <center>
+                    <select id="checkbox1">
+                        <option value="0">Selecionar</option>
+                        <option value="1">Piedra</option>
+                        <option value="2">Papel</option>
+                        <option value="3">Tijera</option>
+                      </select>
+                    </center>
+                </div>
+                </div>
+                
+            </div>
+            
+            <div class="footer_box">
+            
+                <div class="footer_menu">
+                    <div class="image_wrapper fl_img">
+                        <h2>JUGADOR 2</h2>
+                    <img id="Player2" src="./images/0R.png" alt="Jugador2">
+                </div>
+                </div>
+            </div>
+        
+            <div class="footer_box">
+                <div class="footer_menu">
+                    
+                    <div class="image_wrapper fl_img"><h2>RESULTADO</h2>
+                    <img id="Win"  src="./images/3R.png" alt="Jugador2">
+                </div>
+                </div>
+        	
+
+        </div>
+        
+        <div class="cleaner"></div>
+    </div> <!-- end of footer -->
+    <div id="templatemo_content_wrapper">
+        <div id="templatemo_content">
+            <center>
+            <h1 id="myLabel">Inicia Juego</h1>
+           </center>
+          
+    </div>
+    </div>
+    <div id="templatemo_top_row_wrapper">
+       
+        <div id="templatemo_top_row">
+         
+            <div class="top_row_box">
+                <h5>:: Piedra </h5>
+           <input type="button"  value="Pulsame" onclick="ejecutaEventoOnclick(1)">
+               
+                 
+            </div>
+            
+            <div class="top_row_box">
+                <h5>:: Papel   </h5>
+                <input type="button"  value="Pulsame" onclick="ejecutaEventoOnclick(2)">
+                        
+            </div>
+            
+            <div class="top_row_box last">
+                <h5>:: Tijera   </h5>
+               <input type="button"  value="Pulsame" onclick="ejecutaEventoOnclick(3)">
+             
+            </div>
+        
+            <div class="cleaner"></div>
+        </div> <!-- end of top row -->
+    </div> <!-- end of top row wrapper -->
+</div>
+
+     <!-- end of content_wrapper -->
+    
+     <!-- end of footer wrapper -->    
+    
+    <div id="templatemo_copyright_wrapper">
+        <div id="templatemo_copyright">
+        
+            Copyright © 2022 DMOS
+            <!-- Credit: www.templatemo.com -->| 
+            <a href="https://es.vecteezy.com/vectores-gratis/dibujos">Dibujos Vectores por Vecteezy</a>
+            |
+            <a href=" http://www.templatemo.com/preview/templatemo_256_black_fox ">Css:Black Fox Template </a>
+        </div> <!-- end of templatemo_copyright -->
+    </div> <!-- end of copyright wrapper -->
+    <!-- templatemo 256 black fox -->
+    <!-- 
+    Black Fox Template 
+    http://www.templatemo.com/preview/templatemo_256_black_fox 
+    -->
+    
+    </body>
+    <script src="index.js"></script> 
+    <script>
+        document.getElementById('checkbox1').addEventListener('change', changeSelect);
+        function changeSelect() {
+            ejecutaEventoOnclick(document.getElementById('checkbox1').value);
+        }
+     </script>
+    </html>

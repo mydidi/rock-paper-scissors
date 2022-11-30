@@ -47,7 +47,7 @@ function  game(choice)
 */
 function setImage(id,val){ 
     var x = document.getElementById(id);
-    x.setAttribute("src","./images/"+ val+"R.png");
+    x.setAttribute("src","./images/"+ val);
 } 
 /**
 * Evento click Boton
@@ -55,9 +55,9 @@ function setImage(id,val){
 */
 function ejecutaEventoOnclick(val){ 
     var rta = game(val).split("-");    
-    setImage("Player1",val);
-    setImage("Player2",rta[0]);
-    setImage("Win",rta[1]);
+    (rta[1] == val)?setImage("Player1",val+"G.png"):setImage("Player1",val+"R.png");
+    (rta[1] == rta[0] )?setImage("Player2",rta[0]+"G.png"):setImage("Player2",rta[0]+"R.png");
+    setImage("Win",rta[1]+"W.png");
     document.getElementById('myLabel').innerHTML= rta[2];
     document.getElementById("checkbox1").value = val;
 } 

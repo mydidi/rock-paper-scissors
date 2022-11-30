@@ -57,6 +57,7 @@ function ejecutaEventoOnclick(val){
     var rta = game(val).split("-");    
     (rta[1] == val)?setImage("Player1",val+"G.png"):setImage("Player1",val+"R.png");
     (rta[1] == rta[0] )?setImage("Player2",rta[0]+"G.png"):setImage("Player2",rta[0]+"R.png");
+    //Empate
     (rta[0] == val)?setImage("Win",val+"W.png"):setImage("Win",rta[1]+"W.png");
     document.getElementById('myLabel').innerHTML= rta[2];
     document.getElementById("checkbox1").value = val;

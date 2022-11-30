@@ -32,7 +32,7 @@ function  game(choice)
     win = 0;
   }
   else
-  if((cpu == 1 && choice == 3)||(cpu == 2 && choice === 1 )||(cpu == 3 && choice == 2))
+  if((cpu == 1 && choice == 3)||(cpu == 2 && choice == 1 )||(cpu == 3 && choice == 2))
   {
     rta = "Perdio. Intentalo de nuevo...";
     win = cpu;
